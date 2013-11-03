@@ -19,9 +19,20 @@ namespace WindowsFormsApplication5
             DemoControl ctl = new DemoControl();
             ctl.Size = new Size(400, 200);
             this.Controls.Add(ctl);
-            ctl.TextSubmitted += TextSubmitted;
+            //ctl.TextSubmitted += TextSubmitted;
+
+            this.textBox1.KeyPress += textBox1_KeyPress;
 
         }
+
+        void textBox1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsDigit(e.KeyChar) && e.KeyChar != '.')
+            {
+                e.Handled = true;
+            }
+        }
+
 
         private void TextSubmitted(object sender, TextSubmittedEventArgs e)
         {

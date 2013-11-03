@@ -1,6 +1,6 @@
 ﻿namespace WindowsFormsApplication5
 {
-    partial class Form1
+    partial class Form2
     {
         /// <summary>
         /// Required designer variable.
@@ -28,32 +28,30 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.hackyTextBox1 = new WindowsFormsApplication5.HackyTextBox();
             this.SuspendLayout();
             // 
-            // textBox1
+            // hackyTextBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(127, 64);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(171, 20);
-            this.textBox1.TabIndex = 0;
+            this.hackyTextBox1.Location = new System.Drawing.Point(63, 50);
+            this.hackyTextBox1.Name = "hackyTextBox1";
+            this.hackyTextBox1.Size = new System.Drawing.Size(467, 64);
+            this.hackyTextBox1.TabIndex = 0;
             // 
-            // Form1
+            // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(631, 277);
-            this.Controls.Add(this.textBox1);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.ClientSize = new System.Drawing.Size(639, 261);
+            this.Controls.Add(this.hackyTextBox1);
+            this.Name = "Form2";
+            this.Text = "Form2";
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
+        private HackyTextBox hackyTextBox1;
     }
 }
-
